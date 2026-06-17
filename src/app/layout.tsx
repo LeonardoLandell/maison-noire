@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 import "./globals.css";
 
@@ -17,7 +18,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Maison Noire",
   description:
-    "Autumn Winter 2026 — Inspired by Milan, Florence and Lake Como.",
+    "Coleção Outono Inverno 2026 inspirada nas paisagens do norte da Itália.",
 };
 
 export default function RootLayout({
@@ -26,8 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
-      <body>{children}</body>
+    <html lang="pt-BR" className={`${inter.variable} ${cormorant.variable}`}>
+      <body>
+        <ScrollProgress />
+
+        {children}
+
+        <div className="global-grain" />
+      </body>
     </html>
   );
 }

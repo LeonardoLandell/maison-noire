@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const navigation = [
   {
-    label: "Collection",
+    label: "Coleção",
     href: "#collection",
   },
   {
@@ -16,7 +16,7 @@ const navigation = [
     href: "#lookbook",
   },
   {
-    label: "About",
+    label: "Sobre",
     href: "#about",
   },
 ];
@@ -41,8 +41,8 @@ function MaisonMark() {
         </div>
 
         <div className="maison-face maison-back">
-          <span>Autumn</span>
-          <span>Winter</span>
+          <span>Outono</span>
+          <span>Inverno</span>
         </div>
       </div>
     </div>
