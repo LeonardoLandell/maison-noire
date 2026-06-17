@@ -123,11 +123,11 @@ a {
 .hero-title {
   font-family: var(--font-cormorant);
 
-  font-size: clamp(5rem, 12vw, 11rem);
+  font-size: clamp(4.5rem, 12vw, 11rem);
 
   line-height: 0.85;
 
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 
   font-weight: 400;
 }
@@ -135,11 +135,11 @@ a {
 .editorial-title {
   font-family: var(--font-cormorant);
 
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.75rem, 7vw, 6rem);
 
   line-height: 0.95;
 
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 
   font-weight: 400;
 }
@@ -151,7 +151,7 @@ a {
 
   line-height: 1;
 
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 
   font-weight: 400;
 }
@@ -195,7 +195,7 @@ a {
 
   margin-inline: auto;
 
-  padding-inline: 24px;
+  padding-inline: clamp(20px, 6vw, 32px);
 }
 
 @media (min-width: 1280px) {
@@ -374,16 +374,14 @@ html.lenis body {
 .maison-flip-card {
   position: relative;
 
-  width: 160px;
-  height: 70px;
+  width: clamp(118px, 36vw, 180px);
+  height: clamp(58px, 18vw, 80px);
 
   transform-style: preserve-3d;
 
   animation: maison-flip 10s infinite;
 
   cursor: default;
-  width: 180px;
-  height: 80px;
   font-size: 2rem;
 }
 
@@ -415,11 +413,11 @@ html.lenis body {
 .maison-back span {
   font-family: var(--font-cormorant);
 
-  font-size: 1.8rem;
+  font-size: clamp(1.28rem, 7vw, 1.8rem);
 
   line-height: 0.9;
 
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 
   text-transform: uppercase;
 }
@@ -508,11 +506,11 @@ html.lenis body {
 .hero-title {
   font-family: var(--font-cormorant);
 
-  font-size: clamp(5rem, 14vw, 12rem);
+  font-size: clamp(4.4rem, 18vw, 12rem);
 
   line-height: 0.82;
 
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 
   text-transform: uppercase;
 
@@ -538,7 +536,7 @@ html.lenis body {
 
   justify-content: center;
 
-  padding: 1rem 2rem;
+  padding: 1rem clamp(1.15rem, 5vw, 2rem);
 
   border: 1px solid rgba(255, 255, 255, 0.15);
 
@@ -568,7 +566,7 @@ html.lenis body {
 
   justify-content: center;
 
-  padding: 1rem 2rem;
+  padding: 1rem clamp(1.15rem, 5vw, 2rem);
 
   border: 1px solid rgba(255, 255, 255, 0.08);
 
@@ -706,7 +704,7 @@ html.lenis body {
 .collection-title {
   font-family: var(--font-cormorant);
 
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.75rem, 8vw, 5rem);
 
   line-height: 0.9;
 
@@ -845,7 +843,7 @@ html.lenis body {
 .editorial-word {
   font-family: var(--font-cormorant);
 
-  font-size: clamp(4rem, 10vw, 9rem);
+  font-size: clamp(3.2rem, 13vw, 9rem);
 
   line-height: 0.9;
 
@@ -919,7 +917,7 @@ html.lenis body {
 .closing-title {
   font-family: var(--font-cormorant);
 
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(3.35rem, 13vw, 8rem);
 
   line-height: 0.9;
 
@@ -941,7 +939,7 @@ html.lenis body {
 
   margin-top: 3rem;
 
-  padding: 1rem 2rem;
+  padding: 1rem clamp(1.15rem, 5vw, 2rem);
 
   border: 1px solid rgba(255, 255, 255, 0.12);
 
@@ -1083,4 +1081,197 @@ html.lenis body {
   color: var(--color-stone);
 
   font-size: 0.9rem;
+}
+
+
+/* ======================================================
+   PRODUCTION POLISH
+====================================================== */
+
+:focus-visible {
+  outline: 1px solid rgba(244, 240, 232, 0.85);
+  outline-offset: 4px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hero-primary-button,
+.hero-secondary-button,
+.closing-button,
+.btn-primary,
+.btn-secondary {
+  min-height: 48px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.footer a,
+.case-links a {
+  color: var(--color-taupe);
+  transition:
+    color 0.3s var(--ease-luxury),
+    border-color 0.3s var(--ease-luxury);
+}
+
+.footer a:hover,
+.case-links a:hover {
+  color: var(--color-cream);
+}
+
+@media (max-width: 767px) {
+  .section,
+  #manifesto,
+  #collection,
+  #materials {
+    padding-block: 6.5rem;
+  }
+
+  #editorial,
+  #closing {
+    padding-block: 7.5rem;
+  }
+
+  .hero-label,
+  .eyebrow,
+  .caption,
+  .collection-number,
+  .material-label,
+  .editorial-small-word {
+    letter-spacing: 0.22em;
+  }
+
+  .hero-title {
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .hero-scroll,
+  .scroll-progress {
+    display: none;
+  }
+
+  .manifesto-image-wrapper,
+  .collection-image-wrapper,
+  .editorial-panel,
+  .closing-image-wrapper {
+    border-radius: 18px;
+  }
+
+  .material-image {
+    border-radius: 16px;
+  }
+
+  .editorial-overlay {
+    padding: clamp(1.25rem, 7vw, 2rem);
+    align-items: flex-end;
+  }
+
+  .editorial-text-block {
+    margin-top: 5rem;
+    text-align: left;
+  }
+
+  .closing-image-wrapper {
+    margin-bottom: 4rem;
+  }
+
+  .closing-content {
+    text-align: left;
+  }
+
+  .closing-description {
+    margin-inline: 0;
+  }
+
+  .footer {
+    padding: 6rem 0 3rem;
+  }
+
+  .footer-brand {
+    gap: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .case-study {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .container-editorial {
+    padding-inline: 18px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.75rem, 17vw, 4.4rem);
+  }
+
+  .hero-primary-button,
+  .hero-secondary-button {
+    width: 100%;
+    letter-spacing: 0.18em;
+  }
+
+  .editorial-title,
+  .collection-title,
+  .material-title,
+  .closing-title,
+  .footer-title {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #manifesto,
+  #collection,
+  #materials {
+    padding-block: 8rem;
+  }
+
+  #editorial,
+  #closing {
+    padding-block: 10rem;
+  }
+
+  .hero-title {
+    font-size: clamp(7rem, 15vw, 9.5rem);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-primary-button:hover,
+  .hero-secondary-button:hover,
+  .closing-button:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

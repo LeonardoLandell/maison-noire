@@ -13,6 +13,7 @@ export function Closing() {
               alt="Maison Noire Closing"
               width={1600}
               height={2000}
+              sizes="(max-width: 1440px) 100vw, 1312px"
               className="closing-image"
             />
           </div>

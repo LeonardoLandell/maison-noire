@@ -15,10 +15,58 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
 });
 
+const siteUrl = new URL(
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://maison-noire.vercel.app",
+);
+
 export const metadata: Metadata = {
-  title: "Maison Noire",
+  metadataBase: siteUrl,
+  title: {
+    default: "Maison Noire — Outono Inverno 2026",
+    template: "%s | Maison Noire",
+  },
   description:
-    "Coleção Outono Inverno 2026 inspirada nas paisagens do norte da Itália.",
+    "Landing page editorial de moda premium inspirada no norte da Itália para a coleção Maison Noire Outono Inverno 2026.",
+  applicationName: "Maison Noire",
+  authors: [{ name: "Leonardo Landell" }],
+  creator: "Leonardo Landell",
+  publisher: "Leonardo Landell",
+  keywords: [
+    "Maison Noire",
+    "Outono Inverno 2026",
+    "moda premium",
+    "landing page editorial",
+    "norte da Itália",
+    "alfaiataria",
+  ],
+  openGraph: {
+    title: "Maison Noire — Outono Inverno 2026",
+    description:
+      "Coleção editorial de moda premium inspirada pelas paisagens silenciosas do norte da Itália.",
+    url: "/",
+    siteName: "Maison Noire",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-maison-noire.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Maison Noire Outono Inverno 2026",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maison Noire — Outono Inverno 2026",
+    description:
+      "Landing page editorial de moda premium inspirada no norte da Itália.",
+    images: ["/images/og-maison-noire.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

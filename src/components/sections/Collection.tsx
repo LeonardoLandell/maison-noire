@@ -69,6 +69,7 @@ export function Collection() {
                       alt={pillar.title}
                       width={900}
                       height={1200}
+                      sizes="(max-width: 1024px) 100vw, 44vw"
                       className="collection-image"
                     />
                   </div>

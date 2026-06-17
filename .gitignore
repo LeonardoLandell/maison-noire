@@ -47,7 +47,6 @@ out
 .env.local
 .env.*.local
 
-public/videos/*.webm
 public/videos/*.mp4
 public/videos/*.mov
 

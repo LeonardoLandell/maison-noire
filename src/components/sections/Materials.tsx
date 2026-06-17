@@ -55,6 +55,7 @@ export function Materials() {
                   alt={material.title}
                   width={900}
                   height={1200}
+                  sizes="(max-width: 1024px) 100vw, 44vw"
                   className="material-image"
                 />
 

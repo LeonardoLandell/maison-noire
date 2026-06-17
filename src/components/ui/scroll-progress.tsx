@@ -11,12 +11,12 @@ export function ScrollProgress() {
 
       const height = document.documentElement.scrollHeight - window.innerHeight;
 
-      setProgress((scrollTop / height) * 100);
+      setProgress(height > 0 ? (scrollTop / height) * 100 : 0);
     };
 
     update();
 
-    window.addEventListener("scroll", update);
+    window.addEventListener("scroll", update, { passive: true });
 
     return () => window.removeEventListener("scroll", update);
   }, []);

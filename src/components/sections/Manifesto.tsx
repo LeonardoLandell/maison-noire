@@ -41,6 +41,7 @@ export function Manifesto() {
               alt="Maison Noire Manifesto"
               width={800}
               height={1200}
+              sizes="(max-width: 1024px) 100vw, 45vw"
               className="
     manifesto-image
     object-cover

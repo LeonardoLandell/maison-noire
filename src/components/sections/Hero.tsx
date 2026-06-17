@@ -3,14 +3,14 @@ import { VideoBackground } from "./video-background";
 
 export function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative min-h-svh overflow-hidden">
       <VideoBackground />
 
       <div className="hero-overlay" />
 
       <div className="hero-vignette" />
 
-      <div className="container-editorial relative z-20 flex h-full items-end pb-24 md:pb-32">
+      <div className="container-editorial relative z-20 flex min-h-svh items-end pb-24 pt-36 md:pb-32">
         <div className="max-w-4xl">
           <span className="hero-label">MAISON NOIRE • Outono|Inverno 2026</span>
 
