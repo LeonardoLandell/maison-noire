@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MAISON NOIRE
 
-## Getting Started
+### Outono Inverno 2026
 
-First, run the development server:
+Uma experiência editorial digital inspirada pela arquitetura, natureza e temporalidade do norte da Itália.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visão
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Maison Noire é um projeto conceitual desenvolvido para explorar a interseção entre Product Design, UI/UX Design, Front-End Engineering e Direção de Arte.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Mais do que uma landing page, o objetivo foi construir uma campanha digital completa, utilizando narrativa visual, motion design e uma linguagem editorial inspirada no universo da moda premium.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Conceito
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Inspirada pelas paisagens do Lago di Como, pelas vilas históricas italianas e pela filosofia do quiet luxury, Maison Noire apresenta uma coleção fictícia Outono Inverno 2026.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A experiência foi projetada para transmitir:
 
-## Deploy on Vercel
+* Elegância Silenciosa
+* Herança Cultural
+* Artesanato
+* Temporalidade
+* Sofisticação Atemporal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Estrutura da Experiência
+
+### Hero
+
+Vídeo cinematográfico de abertura desenvolvido a partir de imagens editoriais, criando uma introdução imersiva para a campanha.
+
+### Manifesto
+
+Apresentação da identidade da marca através de fotografia, tipografia editorial e narrativa institucional.
+
+### Coleção
+
+Quatro pilares conceituais que representam a essência da coleção:
+
+* Alfaiataria
+* Matérias Naturais
+* Herança Italiana
+* Elegância Silenciosa
+
+### Matérias
+
+Exploração dos materiais, texturas e referências arquitetônicas que fundamentam a direção criativa do projeto.
+
+### Editorial
+
+Momento de contemplação visual focado em movimento, herança e passagem do tempo.
+
+### Encerramento
+
+Conclusão da narrativa através de uma composição minimalista e contemplativa.
+
+---
+
+## Direção de Arte
+
+A linguagem visual foi inspirada por campanhas editoriais contemporâneas do segmento de luxo.
+
+Elementos centrais:
+
+* Espaço negativo
+* Tipografia editorial
+* Fotografia cinematográfica
+* Movimento sutil
+* Paleta neutra
+* Narrativa visual
+
+---
+
+## Tecnologias
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* Vercel
+
+---
+
+## Competências Demonstradas
+
+### Product Design
+
+Construção da narrativa digital e arquitetura da experiência.
+
+### UI Design
+
+Desenvolvimento do sistema visual, composição editorial e identidade da interface.
+
+### UX Design
+
+Estruturação da jornada, hierarquia de conteúdo e fluxo de navegação.
+
+### Front-End Engineering
+
+Implementação responsiva, animações, performance e organização da aplicação.
+
+### Motion Design
+
+Animações de entrada, scroll reveal, vídeo hero e microinterações.
+
+---
+
+## Observações
+
+Este projeto foi desenvolvido exclusivamente para fins de estudo, experimentação e apresentação de portfólio.
+
+As imagens utilizadas foram geradas por inteligência artificial para compor a direção visual da campanha.
+
+---
+
+## Desenvolvido por
+
+Leonardo Landell
+
+Frontend Engineer • Product Engineer • UI/UX Engineer
+
+LinkedIn:
+https://linkedin.com/in/Leonardo-Landell
+
+GitHub:
+https://github.com/LeonardoLandell
+
+Portfólio:
+https://leonardolandell-dev.vercel.app
