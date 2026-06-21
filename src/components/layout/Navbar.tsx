@@ -4,20 +4,20 @@ import Link from "next/link";
 
 const navigation = [
   {
-    label: "Manifesto",
-    href: "#manifesto",
-  },
-  {
     label: "Coleção",
     href: "#collection",
   },
   {
-    label: "Matérias",
-    href: "#materials",
-  },
-  {
     label: "Editorial",
     href: "#editorial",
+  },
+  {
+    label: "Lookbook",
+    href: "#lookbook",
+  },
+  {
+    label: "Sobre",
+    href: "#about",
   },
 ];
 
@@ -86,8 +86,6 @@ export function Navbar() {
           </ul>
 
           <button
-            type="button"
-            aria-label="Abrir menu de navegação"
             className="
             md:hidden
             text-[11px]

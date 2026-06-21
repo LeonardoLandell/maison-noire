@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import { FadeUp } from "@/components/ui/fade-up";
 
 export function Closing() {
@@ -30,13 +31,28 @@ export function Closing() {
             </h2>
 
             <p className="closing-description">
-              Uma coleção inspirada pelas paisagens do norte da Itália, onde
-              arquitetura, natureza e artesanato compartilham a mesma linguagem.
+              Uma exploração entre moda, narrativa visual e experiências
+              digitais inspiradas pela elegância silenciosa da tradição europeia
+              contemporânea.
             </p>
 
-            <Link href="#collection" className="closing-button">
-              Explorar Coleção
-            </Link>
+            <div className="closing-actions">
+              <Link
+                href="/campanha"
+                className="closing-button closing-button--primary"
+              >
+                Explorar Campanha
+              </Link>
+
+              <Link
+                href="https://leonardolandell-dev.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="closing-button"
+              >
+                Explorar Portfólio
+              </Link>
+            </div>
           </div>
         </FadeUp>
       </div>

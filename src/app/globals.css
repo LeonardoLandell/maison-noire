@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+:root {
+  --mn-background: #0b0b0b;
+  --mn-surface: #141414;
+
+  --mn-cream: #f5f1ea;
+  --mn-stone: #d8d0c7;
+  --mn-taupe: #a89f93;
+
+  --mn-text: rgba(245, 241, 234, 0.95);
+  --mn-text-soft: rgba(216, 208, 199, 0.8);
+}
 /* ======================================================
    THEME
 ====================================================== */
@@ -1083,7 +1094,6 @@ html.lenis body {
   font-size: 0.9rem;
 }
 
-
 /* ======================================================
    PRODUCTION POLISH
 ====================================================== */
@@ -1273,5 +1283,109 @@ a {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+}
+/*============================================Campanha==================================================================*/
+.editorial-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: clamp(1.5rem, 4vw, 4rem);
+}
+.editorial-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: rgba(216, 208, 199, 0.6);
+}
+.editorial-divider {
+  width: 96px;
+  height: 1px;
+  background: rgba(168, 159, 147, 0.4);
+}
+.editorial-copy {
+  max-width: 920px;
+  margin-inline: auto;
+  line-height: 1.9;
+  color: rgba(216, 208, 199, 0.8);
+}
+.editorial-capabilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.7rem;
+  color: rgba(168, 159, 147, 0.8);
+}
+.editorial-button {
+  border: 1px solid rgba(216, 208, 199, 0.3);
+  padding: 1.25rem 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  transition: all 0.4s ease;
+}
+
+.editorial-button:hover {
+  background: #f5f1ea;
+  color: #000;
+  border-color: #f5f1ea;
+}
+.closing-actions {
+  display: flex;
+
+  gap: 1rem;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 2rem;
+}
+
+.closing-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 220px;
+
+  padding: 1rem 2rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #fff;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease;
+}
+
+.closing-button:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.closing-button--primary {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.closing-button--primary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .closing-actions {
+    flex-direction: column;
+  }
+
+  .closing-button {
+    width: 100%;
   }
 }
